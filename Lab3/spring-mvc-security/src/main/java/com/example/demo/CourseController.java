@@ -46,10 +46,6 @@ public class CourseController {
         this.courseService.deleteCourseById(id);
         return "redirect:/";
     }
-    @GetMapping("/error")
-    public String error() {
-        return "Deo cho";
-    }
 
     @GetMapping("/page/{pageNo}")
     public String findPaginated(@PathVariable (value = "pageNo") int pageNo,
